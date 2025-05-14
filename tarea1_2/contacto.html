@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de datos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action="" id="formulario" >
+
+        <h1>Formulario de Registro</h1>
+        <div>
+            <label >Nombre</label>
+            <input type="text" name="nombre" required>
+            <br>
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="">Apellido</label>
+            <input type="text" name="apellido" required>
+        </div>
+        <br>
+        <div>
+            <label for="">Correo</label>
+            <input type="email" name="correo" required>
+        </div>
+        <br>
+        <div>
+            <label for="">Edad</label>
+            <input type="text" name="edad" id="edad" required>
+        </div>
+        <br>
+        <div>
+            <label for="">Pais</label>
+            <select name="pais" required>
+                <option value="">Selecciona un pais</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="México">México</option>
+                <option value="Francia">Francia</option>
+                <option value="Japón">Japón</option>
+                <option value="Italia">Italia</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Provincia</label>
+            <select name="provincia" required>
+                <option value="">Selecciona una provincia</option>
+                <option value="Pichincha">Pichincha</option>
+                <option value="Guayas">Guayas</option>
+                <option value="Manabí">Manabí</option>
+                <option value="Azuay">Azuay</option>
+                <option value="Tungurahua">Tungurahua</option>
+            </select>
+        </div>
+        <br>
+        <button >Registrarse</button>
+    </form>
+    <script src="/js/contacto.js"></script> 
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+section {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+aside {
+    background-color: #e0ffe0;
+    border-left: 5px solid #4CAF50;
+    padding: 1em;
+    margin: 2em auto;
+    max-width: 800px;
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Estilos para el formulario */
+form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form h1 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 1.5em;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 0.6em 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 3px rgba(76, 175, 80, 0.4);
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 0.8em;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form button:active {
+  transform: scale(0.98);
+}
+
+
