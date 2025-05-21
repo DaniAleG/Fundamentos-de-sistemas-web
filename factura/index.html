@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Factura de compras</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <h1>Factura</h1>
+    <h2>Ingreso de artículos</h2>
+
+    <!--Datos de Ingreso-->
+    <div class="ingreso" id="ingresoArticulos">
+        <input type="text" id="codigo" placeholder="Código" />
+        <input type="number" id="cantidad" placeholder="Cantidad" value="1" min="1" />
+        <input type="text" id="descripcion" placeholder="Descripción" />
+        <input type="number" id="precio" placeholder="Precio Unitario" step="0.01" />
+        <input type="number" id="descuento" placeholder="Descuento $" step="0.01" min="0" />
+        <button onclick="agregarProducto()">Agregar</button>
+    </div>
+
+    <!--Tabla de artículos-->
+    <table id="tabla">
+        <!-- Encabezado de la tabla -->
+        <h2>Factura</h2>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Cantidad</th>
+                <th>Descripción</th>
+                <th>Precio Unitario</th>
+                <th>Descuento</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas agregadas dinámicamente -->
+        </tbody>
+    </table>
+    <br><br>
+    <!--Totales-->
+    <div class="resumen" id="resumenTotales">
+        <p>Subtotal sin Impuestos: $ <span id="subtotal">0.00</span></p>
+        <p>Subtotal IVA 15%: $ <span id="subtotalIVA">0.00</span></p>
+        <p>Total Descuento: $ <span id="totalDescuento">0.00</span></p>
+        <p>Valor IVA 15%: $ <span id="valorIva">0.00</span></p>
+        <p>Valor Total: $ <span id="valorTotal">0.00</span></p>
+    </div>
+
+    <!-- Botón para descargar PDF -->
+    <button onclick="generarPDF()" id="genera">Descargar Factura PDF</button>
+
+    <!-- Script funcionalidad -->
+    <script src="js/funciones.js"></script>
+
+    <!-- Librería jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>

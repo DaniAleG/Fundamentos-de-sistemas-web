@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/imagenes/pngwing.com.png" alt="logo" width="20%" height="20%">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conozcanos.html">Conózcanos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="activo"><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" id="formRegistro">
+        <h1>Registro de usuario</h1>
+        <div>
+            <label for="" style="display: block; margin-bottom: 5px;">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required> 
+        </div>
+        <div>
+            <label for="">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div>
+            <label for="">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div>
+            <label for="">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required >
+        </div>
+
+        <div>
+            <label for="">Edad:</label>
+            <input type="edad" id="edad" name="edad" required>
+        </div>
+      
+        <div>
+            <label for="">País:</label>
+            <select name="" id="pais" required >
+                <option value="">Seleciona un país</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="China">China</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Chile">Chile</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Provincia:</label>
+            <select name="" id="provincia" required>
+                <option value="">Seleciona una provincia</option>
+                <option value="Pichincha">Pichincha</option>
+                <option value="Cotopaxi">Cotopaxi</option>
+                <option value="Tungurahua">Tungurahua</option>
+                <option value="Santa Elena">Santa Elena</option>
+            </select>
+        </div>
+        <button type="submit">Registrarse</button>
+    </form>
+    <!--Se pone antes del footer- Vincular el script externo-->
+    <script src="js/formulario.js"></script>
+
+    <footer class="pagina">
+        <img src="/imagenes/pngwing.com.png" alt="logo" width="5%" height="5%">
+        <p>Derechos reservados &copy; 2024</p>
+        <p>Desarrollado por: Danidaniel, Camitics, Nicopico</p>
+    </footer>
+</body>
+</html>
