@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Sangolquí</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!--Menu-->
+    <nav>
+        <div class="desktop">
+            <div class="logo">TURISMO</div>
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="primary nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="#">Destinos</a>
+                <a href="#">Gastronomía</a>
+                <a href="contactos.html">Contactos</a>
+            </div>
+
+            <div class="secondary nav-links">
+                <a href="#">Eventos</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Contenedor para barra superior -->
+    <div class="top-bar">
+        <!-- Barra de búsqueda -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar..." />
+            <div class="actions">
+            <button><span class="material-icons">mic</span></button>
+            <button><span class="material-icons">document_scanner</span></button>
+            <button><span class="material-icons">search</span></button>
+            </div>
+        </div>
+
+        <!-- Notificación -->
+        <div class="notification">
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="count">3</span>
+        </div>
+    </div>
+
+    <!--Tarjetas de lugares turisticos-->
+    <section class="cards">
+        <div class="card">
+            <img src="https://img.goraymi.com/2017/12/27/3d22796e19129918b3a6728d49f50d52_xl.jpg" alt="Monumento de la Sed">
+            <div class="header">
+                <div class="title">Monumento de la Sed</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta illum magnam voluptatum 
+                    repellendus nisi omnis rem, maiores sequi mollitia corporis, facilis sunt laudantium quaerat? 
+                    Consequuntur sapiente cupiditate dignissimos beatae eius?
+                </p>
+                <a href="https://maps.app.goo.gl/HDXvrTQoKXJ9TUQG8">Ver en maps..</a>
+            </div>
+        </div>
+        <!--agregar mas elementos-->
+        <div class="card element-1">
+            <img src="https://img.goraymi.com/2017/07/26/a47fcebb99f3bf1e70a416b45774b411_xl.jpg" alt="Parque Salinas">
+            <div class="header">
+                <div class="title">Parque Salinas</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error doloremque vel aperiam quasi 
+                    esse minus iusto necessitatibus animi architecto perspiciatis illo voluptate labore ut placeat 
+                    quos, temporibus excepturi voluptates consectetur!</p>
+                    <a href="https://maps.app.goo.gl/VibmDeH1DNMspz6B8">Ver en maps...</a>
+            </div>
+        </div>
+        <!--agregar mas elementos-->
+        <div class="card element-2">
+            <img src="https://img.goraymi.com/2017/07/26/5fe7b2c86c530cf4c2ce2c74675d8853_xl.jpg" alt="Parque Santa Clara">
+            <div class="header">
+                <div class="title">Parque Santa Clara</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error doloremque vel aperiam quasi 
+                    esse minus iusto necessitatibus animi architecto perspiciatis illo voluptate labore ut placeat 
+                    quos, temporibus excepturi voluptates consectetur!</p>
+                <a href="https://maps.app.goo.gl/eAcbMRnRLn81bSDR8">Ver en maps...</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Tabla de informacion-->
+    <table>
+        <caption>Tarifas y Horarios de tours</caption>
+        <thead>
+            <th>Lugar</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Horario</th>
+            <th>Guía</th>
+            <th>Duración</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monumento de la Sed</td>
+                <td>Parque</td>
+                <td>$1.00</td>
+                <td>10:00 - 12:00</td>
+                <td>Juan Pérez</td>
+                <td>2 horas</td>
+            </tr>
+            <tr>
+                <td>Parque Salinas</td>
+                <td>Parque</td>
+                <td>$5.00</td>
+                <td>14:00 - 16:00</td>
+                <td>María López</td>
+                <td>4 horas</td>
+            </tr>
+            <tr>
+                <td>Parque Santa Clara</td>
+                <td>Parque</td>
+                <td>$3.00</td>
+                <td>09:00 - 11:00</td>
+                <td>Carlos García</td>
+                <td>6 horas</td>
+        </tbody>
+    </table>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>

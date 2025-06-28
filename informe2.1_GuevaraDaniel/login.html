@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="form-container">
+        <div class="login-container">
+            <h1>Welcome</h1>
+            <h2>SITIOS TURISTICOS</h2>
+            <form>
+                <p>
+                    <label for="username">Username</label>
+                    <input class="input" type="text" name="username" id="username" required minlength="3">
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input class="input" type="password" name="password" id="password" required minlength="4">
+                </p>
+                <div class="options">
+                    <div>
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+                    <div>
+                        <a href="#">Olvidé mi password</a>
+                    </div>
+                </div>
+                <p>
+                    <input type="submit" class="btn btn-login" value="INICIAR SESIÓN">
+                </p>
+                <div class="providers">
+                    <span>Otros métodos para hacer login</span>
+                    <button class="btn google-provider">GOOGLE</button>
+                    <button class="btn facebook-provider">FACEBOOK</button>
+                    <button class="btn twitter-provider">TWITTER</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="welcome-screen-container">
+            <span>¡Bienvenido de nuevo!</span>
+        </div>
+    </div>
+
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <div class="form-container">
+    <div class="login-container">
+      <h1>Recuperar Contraseña</h1>
+      <p>Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.</p>
+      <form id="recover-form">
+        <p>
+          <label for="email">Correo electrónico</label>
+          <input class="input" type="email" id="email" name="email" required />
+        </p>
+        <p>
+          <input class="btn btn-login" type="submit" value="Enviar enlace" />
+        </p>
+        <p>
+          <a href="login.html">Volver al login</a>
+        </p>
+      </form>
+    </div>
+    <div class="welcome-screen-container">
+      <span>¡Te ayudaremos a recuperar el acceso!</span>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("recover-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      if (email) {
+        alert("Se ha enviado un enlace de recuperación a: " + email);
+        // Aquí podrías integrar un sistema real de recuperación con backend
+      }
+    });
+  </script>
+</body>
+</html>
