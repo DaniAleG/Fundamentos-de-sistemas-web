@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Receta</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Recetas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html"><i class="fas fa-utensils"></i> Receta Ejemplo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enviarRecetas.html"><i class="fas fa-paper-plane"></i> Enviar Receta</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar receta" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="card-title text-center mb-4">Receta: Bolón de Verde</h1>
+                <img src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/fb1073a76175fe59c4b1a5834cbc1440.jpg" alt="bolon de verde" class="img-fluid rounded mb-4">
+                <p class="lead text-center mb-4">
+                    El Bolón de verde es una delicia ecuatoriana, bolitas hechas con plátano verde y rellenas de queso. Es una gran opción para acompañar el desayuno junto con huevos y café. El Queso Ecuatoriano Tropical es ideal para esta receta por su textura y sabor auténticos.
+                </p>
+                <!-- Tabs -->
+                <ul class="nav nav-tabs mb-3" id="recetaTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="ingredientes-tab" data-bs-toggle="tab" data-bs-target="#ingredientes" type="button" role="tab" aria-controls="ingredientes" aria-selected="true">Ingredientes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="elaboracion-tab" data-bs-toggle="tab" data-bs-target="#elaboracion" type="button" role="tab" aria-controls="elaboracion" aria-selected="false">Elaboración</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="recetaTabsContent">
+                    <div class="tab-pane fade show active" id="ingredientes" role="tabpanel" aria-labelledby="ingredientes-tab">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="tabla-ingredientes">
+                                <thead>
+                                    <tr>
+                                        <th>Ingrediente</th>
+                                        <th>Cantidad</th>
+                                        <th>Calorías</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Plátanos verdes</td><td>4</td><td>480</td></tr>
+                                    <tr><td>Mantequilla</td><td>4 cucharadas</td><td>400</td></tr>
+                                    <tr><td>Queso Ecuatoriano Tropical, desmoronado</td><td>4 oz.</td><td>320</td></tr>
+                                    <tr><td>Sal</td><td>Al gusto</td><td>0</td></tr>
+                                    <tr><td>Aceite vegetal para freír</td><td>Al gusto</td><td>200</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-primary" id="calcular-calorias">Calcular calorías totales</button>
+                            <div class="alert alert-success mt-2 d-none" id="resultado-calorias"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="elaboracion" role="tabpanel" aria-labelledby="elaboracion-tab">
+                        <ol class="list-group list-group-numbered mb-4">
+                            <li class="list-group-item">Pela y corta los plátanos en trozos de 1 ½” de grueso. Calienta el aceite en un sartén grande y fríe los plátanos, hasta que estén dorados y suaves.</li>
+                            <li class="list-group-item">Transfiere los plátanos a un plato hondo y añade la mantequilla, sal, y pimienta. Aplástalos hasta lograr una consistencia uniforme.</li>
+                            <li class="list-group-item">Usando sus manos, forma pequeñas bolas con la masa de plátano. Con tus dedos, haz un hueco en el centro de cada bola y llénalo con el Queso Ecuatoriano Tropical. Luego ciérrala para volver a formar la bola.</li>
+                            <li class="list-group-item">Calienta más aceite de vegetal y fríe las bolas volteándolas con mucho cuidado hasta que estén doradas y crujientes. Sírvelas calientes.</li>
+                        </ol>
+                        <div class="alert alert-info" role="alert">
+                            <strong>Nota:</strong> Si se te dificulta mantener la masa unida al freír, te recomendamos usar un sartén hondo de sopa lleno hasta la mitad con aceite. Fríe las bolas una a la vez, usando una cucharón grande perforado.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2025 Recetas:
+            <a class="text-dark" href="#">Recetas.com</a>
+        </div>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/funcionalidades.js"></script>
+</body>
+</html>

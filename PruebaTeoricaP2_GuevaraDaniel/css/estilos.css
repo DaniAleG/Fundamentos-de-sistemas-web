@@ -1,0 +1,20 @@
+
+        body {
+            background: #f8fafc;
+        }
+        .carousel-inner img {
+            height: 350px;
+            object-fit: cover;
+        }
+        .navbar-brand img {
+            border-radius: 50%;
+            border: 2px solid #198754;
+        }
+        .carousel-caption {
+            font-size: 1.1rem;
+        }
+        @media (max-width: 768px) {
+            .carousel-inner img {
+                height: 200px;
+            }
+        }
