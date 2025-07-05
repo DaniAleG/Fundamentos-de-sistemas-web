@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Usando Bootstrapt</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <!--navbar de bootstrap
+    navbar
+    Inicio
+    Acerca de ...
+    Ejercicio 1: -una pagina
+    Ejercicio 2: pagina
+    Ejercicio 3: pagina-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercDe.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ejercicio1.html">Ejercicio 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ejercicio2.html">Ejercicio 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ejercicio3.html">Ejercicio 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+    <!--Ejercicio para sumar 10 elementos
+    <p>Hola mundo......</p>
+    <div class="container mt-5">
+        <button class="btn btn-primary">Boton</button>
+    </div>-->
+    <div class=" container mt-5">
+        <h1 class="mb-4">Suma de arreglos con Js</h1>
+        <div class="mb-3">
+            <label for="form-label">
+                Aregglo de 10 numeros (separados por comas):
+                <input type="text" class="form-control" id="arrayInput" placeholder="Ejemplo: 1,2,3,4,5,6,7,8,9,10">
+
+            </label>
+        </div>
+        <button class="btn btn-primary mb-3" onclick="calcularBtn()">Calcular</button>
+
+        <div class="alert alert-info" id="resultado">
+        </div>
+    </div>
+    <footer>
+        <div class="text-center mt-5">
+            <small class="text-muted">
+                Proyecto de Fundamentos de Sistemas Web &copy; 2024
+            </small>
+        </div>
+    </footer>
+    <script src="/js/"></script>
+    <script src="/funciones/calculos.js"></script>
+</body>
+</html>
