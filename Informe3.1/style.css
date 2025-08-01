@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  margin: 20px;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+section {
+  background: white;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div{
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 10px 0;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  line-height: 1.5;
+}
+
+#mensajeTarea {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #c0392b;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Unshift y Shift en JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Gestión de productos y tareas</h1>
+
+  <!-- Sección de productos -->
+  <section>
+    <h2>Productos</h2>
+    <div id="productos"></div>
+    <input type="text" id="nuevoProducto" placeholder="Nuevo producto">
+    <button onclick="agregarProducto()">Agregar producto</button>
+  </section>
+
+  <!-- Sección de tareas -->
+  <section>
+    <h2>Tareas por hacer</h2>
+    <div id="tareasLista"></div>
+     <div id="tareas"></div>
+    <button onclick="eliminarTarea()">Eliminar tarea</button>
+    <div id="mensajeTarea"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
